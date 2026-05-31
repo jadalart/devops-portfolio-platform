@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata: 
+ name: frontend-pod
+
+spec:
+ containers:
+ - name: frontend
+   image: portfolio-frontend:v1
+   imagePullPolicy: Never
+   ports:
+   -  containerPort: 80
+ 
